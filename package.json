@@ -4,6 +4,7 @@
   "description": "",
   "author": "Enggar Dwi Prihastomo",
   "main": "index.js",
+  "repository": "github.com:enggardwiprihastomo/tink-aggregation",
   "scripts": {
     "client": "cd client && npm start",
     "server": "nodemon src/server.index.js",
