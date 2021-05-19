@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../assets/fonts/Nexa-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../assets/fonts/Nexa-Light.otf") format("opentype");
+}
+
+$nexa-bold: "Nexa Bold";
+$font-stack: "Nexa Light", "Calibri", "Franklin Gothic Medium";
+$bg-color: #FFFFFF;
+$font-color: #727376;
+$font-normal: 1rem;
+$font-big: 1.2rem;
+$font-small: 0.8rem;
+$marginVertical: 1em;
+$marginHorizontal: 1.5em;

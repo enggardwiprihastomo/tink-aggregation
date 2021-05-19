@@ -1,0 +1,232 @@
+@import "variables";
+@import "screen";
+
+%title {
+    font-size: $font-big;
+    font-family: $nexa-bold;
+}
+
+*{
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: $font-normal;
+    margin: 0;
+}
+
+.illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $marginHorizontal;
+    min-height: 100vh;
+    justify-content: center;
+    
+    &-title{
+        @extend %title
+    }
+    
+    &-icon{
+        height: 10rem;
+        width: 10rem;
+        object-fit: contain;
+        margin: $marginVertical 0;
+
+        @include mobile(){
+            height: 8rem;
+            width: 8rem;
+        }
+    }
+}
+
+.merchants{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $marginHorizontal;
+    flex: 1;
+    overflow: auto;
+
+    &-title{
+        @extend %title
+    }
+
+    &-list{
+        padding: 0;
+        min-width: 25rem;
+
+        @include mobile(){
+            min-width: 100%;
+        }
+    }
+
+    &-item{
+        animation: 400ms ease-out forwards anim-list;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: $marginVertical $marginHorizontal;
+        margin: $marginVertical 0;
+        cursor: pointer;
+        opacity: 0;
+        border-radius: 0.25rem;
+        box-shadow: 0.15rem 0.25rem 0.25rem rgba($font-color,0.2);
+        transition: all 500ms;
+
+        &:hover{
+            background: rgba($font-color, 0.1);
+        }
+    }
+
+    &-logo{
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.75em;
+        border-radius: 1rem;
+    }
+}
+
+p{
+    margin: ($marginVertical / 4) 0;
+    text-align: center;
+    color: $font-color;
+    user-select: none;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100%;
+    background: rgba(255,255,255, 1);
+    top: 0;
+    overflow: hidden;
+    
+    &-container{
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background: $bg-color;
+        padding: $marginHorizontal;
+        box-shadow: 0 0.25rem 0.5rem rgba($font-color, 0.2);
+        animation: 200ms ease-in forwards modal-in;
+
+        @include mobile(){
+            width: 100%;
+            height: 100vh;
+            box-shadow: none;
+            animation: 200ms ease-in forwards modal-up;
+        }
+    }
+
+    &-reverse{
+        animation: 200ms ease-out forwards modal-out;
+
+        @include mobile(){
+            animation: 200ms ease-in forwards modal-down;
+        }
+    }
+
+    &-logo{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 3rem;
+        margin: $marginVertical 0;
+
+        @include mobile(){
+            height: 8rem;
+            width: 8rem;
+            border-radius: 4rem;
+        }
+    }
+
+    &-currency{
+        font-size: $font-big;
+        font-family: $nexa-bold;
+    }
+
+    &-desc{
+        font-size: $font-small;
+        margin: ($marginVertical/2) 0;
+
+        @include mobile(){
+            font-size: $font-normal;
+            margin: ($marginVertical/4) 0;
+        }
+    }
+
+    &-close{
+        position: absolute;
+        top: 0.8rem;
+        right: 0.8rem;
+        height: 1.2rem;
+        width: 1.2rem;
+        cursor: pointer;
+        color: $font-color;
+
+        @include mobile(){
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}
+
+@keyframes anim-list{
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modal-in{
+    0%{
+        opacity: 0;
+        transform: scale(5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modal-out{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(5);
+    }
+}
+
+@keyframes modal-up {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes modal-down {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}

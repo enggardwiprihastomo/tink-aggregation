@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10cm" height="10cm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10000 10000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil2 {fill:#004650}
+    .fil1 {fill:#F89572}
+    .fil3 {fill:#FEAE22}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="10000" height="10000"/>
+  <g id="_471890888">
+   <path class="fil1" d="M5501 4899l783 586 1835 -2453 315 235 391 293 196 146 816 -1090c121,-161 87,-392 -74,-513l0 0c-161,-121 -392,-87 -513,74l-366 489 -315 -235 894 -1195c161,-215 117,-523 -99,-684l0 0c-215,-161 -523,-117 -684,99l-1793 2397 -328 -246 544 -727c121,-161 87,-392 -74,-513l0 0c-161,-121 -392,-87 -513,74l-993 1328 196 146 391 293 328 246 -936 1251z"/>
+   <path class="fil2" d="M9745 4668c0,15 0,30 -2,45l-601 4464c-27,200 -167,368 -368,368l-7343 0c-202,0 -553,-168 -580,-368l-601 -4464c-2,-15 -2,-30 1,-45 -137,-1 -249,-114 -249,-251l0 0c0,-138 113,-251 251,-251l9497 0c138,0 251,113 251,251l0 0c0,138 -113,252 -251,252l-4 0zm-2263 2734l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm5304 -1915l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326zm-1326 0l589 0 0 1326 -589 0 0 -1326z"/>
+   <rect class="fil3" transform="matrix(-1.52109 -2.33195 2.33195 -1.52109 219.277 7427.42)" width="185" height="1680" rx="93" ry="93"/>
+   <rect class="fil3" transform="matrix(1.52109 -2.33195 -2.33195 -1.52109 9771.08 7427.42)" width="185" height="1680" rx="93" ry="93"/>
+  </g>
+ </g>
+</svg>
